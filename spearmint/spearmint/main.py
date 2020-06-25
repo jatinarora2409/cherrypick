@@ -199,7 +199,7 @@ def main():
 def attempt_dispatch(expt_config, expt_dir, chooser, driver, options):
     log("\n" + "-" * 40)
     expt = load_experiment(expt_config)
-
+    print(options)
     # Build the experiment grid.
     expt_grid = ExperimentGrid(expt_dir,
                                expt.variable,
